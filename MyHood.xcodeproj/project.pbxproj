@@ -16,6 +16,8 @@
 		DE89DF511C77483200CA9E58 /* MyHoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE89DF501C77483200CA9E58 /* MyHoodUITests.swift */; };
 		DE89DF601C77499B00CA9E58 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE89DF5F1C77499B00CA9E58 /* Post.swift */; };
 		DE89DF651C77537E00CA9E58 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE89DF641C77537E00CA9E58 /* PostCell.swift */; };
+		DE89DF681C775C8900CA9E58 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE89DF671C775C8900CA9E58 /* PostVC.swift */; };
+		DE89DF6B1C77926000CA9E58 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE89DF6A1C77926000CA9E58 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		DE89DF521C77483200CA9E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE89DF5F1C77499B00CA9E58 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		DE89DF641C77537E00CA9E58 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		DE89DF671C775C8900CA9E58 /* PostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		DE89DF6A1C77926000CA9E58 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +105,12 @@
 		DE89DF2F1C77483200CA9E58 /* MyHood */ = {
 			isa = PBXGroup;
 			children = (
+				DE89DF691C77924800CA9E58 /* Services */,
+				DE89DF661C775C3C00CA9E58 /* Controller */,
 				DE89DF611C7752FE00CA9E58 /* View */,
 				DE89DF5E1C77497F00CA9E58 /* Model */,
 				DE89DF301C77483200CA9E58 /* AppDelegate.swift */,
-				DE89DF321C77483200CA9E58 /* ViewController.swift */,
-				DE89DF341C77483200CA9E58 /* Main.storyboard */,
 				DE89DF371C77483200CA9E58 /* Assets.xcassets */,
-				DE89DF391C77483200CA9E58 /* LaunchScreen.storyboard */,
 				DE89DF3C1C77483200CA9E58 /* Info.plist */,
 			);
 			path = MyHood;
@@ -143,9 +146,28 @@
 		DE89DF611C7752FE00CA9E58 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DE89DF341C77483200CA9E58 /* Main.storyboard */,
+				DE89DF391C77483200CA9E58 /* LaunchScreen.storyboard */,
 				DE89DF641C77537E00CA9E58 /* PostCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		DE89DF661C775C3C00CA9E58 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE89DF321C77483200CA9E58 /* ViewController.swift */,
+				DE89DF671C775C8900CA9E58 /* PostVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DE89DF691C77924800CA9E58 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DE89DF6A1C77926000CA9E58 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +304,9 @@
 				DE89DF601C77499B00CA9E58 /* Post.swift in Sources */,
 				DE89DF331C77483200CA9E58 /* ViewController.swift in Sources */,
 				DE89DF311C77483200CA9E58 /* AppDelegate.swift in Sources */,
+				DE89DF6B1C77926000CA9E58 /* DataService.swift in Sources */,
 				DE89DF651C77537E00CA9E58 /* PostCell.swift in Sources */,
+				DE89DF681C775C8900CA9E58 /* PostVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
