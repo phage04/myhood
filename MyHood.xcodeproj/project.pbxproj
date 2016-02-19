@@ -14,6 +14,8 @@
 		DE89DF3B1C77483200CA9E58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE89DF391C77483200CA9E58 /* LaunchScreen.storyboard */; };
 		DE89DF461C77483200CA9E58 /* MyHoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE89DF451C77483200CA9E58 /* MyHoodTests.swift */; };
 		DE89DF511C77483200CA9E58 /* MyHoodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE89DF501C77483200CA9E58 /* MyHoodUITests.swift */; };
+		DE89DF601C77499B00CA9E58 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE89DF5F1C77499B00CA9E58 /* Post.swift */; };
+		DE89DF651C77537E00CA9E58 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE89DF641C77537E00CA9E58 /* PostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		DE89DF4C1C77483200CA9E58 /* MyHoodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyHoodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE89DF501C77483200CA9E58 /* MyHoodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHoodUITests.swift; sourceTree = "<group>"; };
 		DE89DF521C77483200CA9E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE89DF5F1C77499B00CA9E58 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		DE89DF641C77537E00CA9E58 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		DE89DF2F1C77483200CA9E58 /* MyHood */ = {
 			isa = PBXGroup;
 			children = (
+				DE89DF611C7752FE00CA9E58 /* View */,
+				DE89DF5E1C77497F00CA9E58 /* Model */,
 				DE89DF301C77483200CA9E58 /* AppDelegate.swift */,
 				DE89DF321C77483200CA9E58 /* ViewController.swift */,
 				DE89DF341C77483200CA9E58 /* Main.storyboard */,
@@ -123,6 +129,23 @@
 				DE89DF521C77483200CA9E58 /* Info.plist */,
 			);
 			path = MyHoodUITests;
+			sourceTree = "<group>";
+		};
+		DE89DF5E1C77497F00CA9E58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE89DF5F1C77499B00CA9E58 /* Post.swift */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		DE89DF611C7752FE00CA9E58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE89DF641C77537E00CA9E58 /* PostCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE89DF601C77499B00CA9E58 /* Post.swift in Sources */,
 				DE89DF331C77483200CA9E58 /* ViewController.swift in Sources */,
 				DE89DF311C77483200CA9E58 /* AppDelegate.swift in Sources */,
+				DE89DF651C77537E00CA9E58 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
